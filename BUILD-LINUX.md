@@ -23,7 +23,7 @@ you'll need to build things yourself and hopefully this document will
 help you do just that.
 
 OK, so just to get you prepared, we're going to do a few things:
- 
+
 1. Install the various dependencies that Sonic Pi needs both to be built
 and to run
 2. Prepare the build by running some command scripts
@@ -45,21 +45,21 @@ few dependencies:
 * Ruby + Dev tools (2.5+)
 * Erlang + Dev tools (21+)
 * SuperCollider + SC3 plugins
-* 
+*
 
 
 ### 1.1 Raspberry Pi OS
 
 The following is a list of packages required for Raspberry Pi OS released in Dec 2020:
 
-```  
+```
 sudo apt-get install -y \
      build-essential cmake git libssl-dev \
      ruby-dev erlang-base erlang-dev erlang-tools \
      supercollider-server sc3-plugins-server alsa-utils libaubio5  jackd2 libjack-jackd2-dev libjack-jackd2-0 libasound2-dev librtmidi-dev pulseaudio-module-jack\
      qt5-default qttools5-dev-tools libqt5concurrent5 libqt5core5a libqt5gui5 libqt5network5 libqt5opengl5 libqt5printsupport5 libqt5concurrent5 libqt5svg5 libqt5widgets5 libqt5svg5-dev \
      compton pulseaudio-module-jack
-```     
+```
 
 
 ## 2. Preparing the Build
@@ -72,7 +72,7 @@ into a folder on your hard drive such as `~/Development/sonic-pi`:
 
 ```
 git clone https://github.com/samaaron/sonic-pi.git ~/Development/sonic-pi
-``` 
+```
 
 If you don't have Git installed you should be able to download a `.zip`
 file of the latest commit or specific release (v3.3+) you'd like to
@@ -80,7 +80,7 @@ build:
 
 https://github.com/samaaron/sonic-pi/archive/main.zip
 
-From now on these instructions will assume you downloaded the source 
+From now on these instructions will assume you downloaded the source
 into `~/Development/sonic-pi`. If you used a different location be sure to
 change any future references to `~/Development/sonic-pi` to your chosen location.
 
@@ -102,6 +102,12 @@ Firstly, we need to change to the `app` directory at the root of the Sonic Pi re
 
 ```
 cd ~/Development/sonic-pi/app
+```
+
+### 3.1.1 Install Dependencies
+
+```
+pamac install aubio gcc-libs glibc osmid qt5-base qscintilla-qt5 ruby ruby-activesupport ruby-ffi ruby-i18n ruby-kramdown ruby-minitest ruby-mocha ruby-multi_json ruby-rouge ruby-rugged ruby-sys-proctable sc3-plugins supercollider boost cmake erlang-nox gendesk lua qt5-tools ruby-bundler wkhtmltopdf
 ```
 
 ### 3.2 Config
@@ -140,4 +146,3 @@ directly either by double clicking it in the Finder or via the terminal
 Good luck and please share your new live coding adventure with us over on:
 
 https://in-thread.sonic-pi.net
-

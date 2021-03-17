@@ -1,4 +1,5 @@
 require 'rubygems'
+require 'rake'
 
 Gem::Specification.new do |spec|
   spec.name       = 'sys-proctable'
