@@ -120,11 +120,11 @@ ExternalProject_Add(aubio
 
     CMAKE_ARGS
         -DLIBSNDFILE_INCLUDE_DIR=${CMAKE_BINARY_DIR}/libsndfile-package/include
-        -DLIBSNDFILE_LIBRARY_DIR=${CMAKE_BINARY_DIR}/libsndfile-package/lib
-        -DLIBOGG_LIBRARY_DIR=${CMAKE_BINARY_DIR}/ogg-package/lib
-        -DLIBVORBIS_LIBRARY_DIR=${CMAKE_BINARY_DIR}/vorbis-package/lib
-        -DLIBOPUS_LIBRARY_DIR=${CMAKE_BINARY_DIR}/opus-package/lib
-        -DLIBFLAC_LIBRARY_DIR=${CMAKE_BINARY_DIR}/flac-package/lib
+        -DLIBSNDFILE_LIBRARY_DIR=${CMAKE_BINARY_DIR}/libsndfile-package/lib64
+        -DLIBOGG_LIBRARY_DIR=${CMAKE_BINARY_DIR}/ogg-package/lib64
+        -DLIBVORBIS_LIBRARY_DIR=${CMAKE_BINARY_DIR}/vorbis-package/lib64
+        -DLIBOPUS_LIBRARY_DIR=${CMAKE_BINARY_DIR}/opus-package/lib64
+        -DLIBFLAC_LIBRARY_DIR=${CMAKE_BINARY_DIR}/flac-package/lib64
 
         -DPC_OGG_INCLUDE_DIRS=${CMAKE_BINARY_DIR}/ogg-package/include
         -DPC_VORBIS_INCLUDE_DIRS=${CMAKE_BINARY_DIR}/vorbis-package/include
