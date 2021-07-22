@@ -82,7 +82,7 @@ module SonicPi
 
     def __erl_mut_stop_erlang
       return nil unless @erlang_pid
-      kill_and_deregister_process @erlang_pid
+      kill_and_deregister_process(@erlang_pid)
       @erlang_pid = nil
     end
 
